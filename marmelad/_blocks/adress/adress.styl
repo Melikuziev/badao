@@ -1,0 +1,21 @@
+.adress
+	display flex
+	align-items center
+	gap 10px
+
+	&__icon
+		width 20px
+		height 20px
+
+	&__adress
+		font-weight 500
+		font-size 13px
+		line-height 1.1
+		color #fff
+		margin 0
+		&:first-child
+			margin-bottom 10px
+
+@media (min-width: $mq.md)
+	.adress
+		display none

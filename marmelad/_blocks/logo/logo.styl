@@ -1,1 +1,20 @@
-.logo {}
+.logo
+	display inline-block
+	img
+		width 48px
+		vertical-align top
+
+@media (min-width: $mq.sm)
+	.logo
+		img
+			width 80px
+
+@media (min-width: $mq.md)
+	.logo
+		img
+			width 100px
+
+@media (min-width: $mq.xl)
+	.logo
+		img
+			width 110px

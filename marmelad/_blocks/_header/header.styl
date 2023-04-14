@@ -1,2 +1,18 @@
 .header
-  flex none
+	&__inner
+		padding-top 20px
+		padding-bottom 20px
+		display flex
+		justify-content space-between
+		margin-bottom 5px
+
+@media (min-width: $mq.md)
+	.header
+		&__inner
+			margin 0
+
+@media (min-width: $mq.xxl)
+	.header
+		&__inner
+			padding-top 10px
+			padding-bottom 10px

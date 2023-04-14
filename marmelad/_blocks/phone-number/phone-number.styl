@@ -1,0 +1,52 @@
+.phone-number
+	display flex
+	align-items center
+	gap 10px
+
+	&__icon
+		width 20px
+		height 20px
+		img
+			vertical-align top
+
+	&__links
+		display flex
+		flex-direction column
+
+	&__number
+		display block
+		text-decoration none
+		color #fff
+		font-weight 700
+		line-height 1.1
+		margin-bottom 5px
+
+	&__whatsapp
+		align-self flex-end
+		display block
+		font-size 10px
+		line-height 1.1
+		color #fff
+
+@media (min-width: $mq.md)
+	.phone-number
+		&__icon
+			width 25px
+			height 25px
+
+		&__number
+			margin-bottom 10px
+
+@media (min-width: $mq.xl)
+	.phone-number
+		gap 15px
+
+		&__icon
+			width 40px
+			height 40px
+
+		&__number
+			font-size 20px
+
+		&__whatsapp
+			font-size 12px

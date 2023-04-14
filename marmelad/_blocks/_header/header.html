@@ -1,5 +1,10 @@
 <header block="header">
 	<div elem="content" class="container">
-		<p>Header</p>
+		<div elem="inner">
+			{% include 'logo.html' %}
+			{% include 'adress-clone.html' %}
+			{% include 'phone-number.html' %}
+		</div>
+		{% include 'adress.html' %}
 	</div>
 </header><!-- header -->
