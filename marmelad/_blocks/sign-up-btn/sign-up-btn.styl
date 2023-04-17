@@ -1,0 +1,33 @@
+.sign-up-btn
+	width 100%
+	max-width 277px
+	padding 15px 40px
+	text-decoration none
+	display flex
+	align-items center
+	gap 54px
+	background-color #F9BA50
+	border-radius 0 40px 40px 0
+	transition background-color .3s
+	span
+		font-weight 500
+		font-size 18px
+		line-height 21px
+		text-transform uppercase
+		color #fff
+	&:hover &__icon
+		transform translateX(15px)
+
+	&__icon
+		transition transform .3s
+		width 25px
+		height 25px
+
+@media (min-width: $mq.md)
+	.sign-up-btn
+		align-self center
+		margin-top 1px
+
+@media (min-width: $mq.xl)
+	.sign-up-btn
+		margin-top -1px
