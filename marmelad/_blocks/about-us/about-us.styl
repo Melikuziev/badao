@@ -1,1 +1,57 @@
-.about-us {}
+.about-us
+	padding-top 40px
+	padding-bottom 40px
+
+	&__inner
+		display flex
+		flex-direction column
+
+	&__title
+		margin-bottom 40px
+
+	&__text-content
+		width 100%
+		max-width 520px
+
+	&__title-clone
+		display none
+		margin-bottom 40px
+
+	&__info
+		font-weight 500
+		font-size 14px
+		line-height 170%
+		margin 0 0 38px 0
+
+@media (min-width: $mq.md)
+	.about-us
+		&__inner
+			flex-direction row
+			gap 20px
+
+		&__title
+			display none
+
+		&__title-clone
+			display block
+
+		&__info
+			font-size 16px
+
+@media (min-width: $mq.xl)
+	.about-us
+		padding-top 75px
+		padding-bottom 195px
+
+		&__inner
+			gap 125px
+
+		&__text-content
+			padding-top 48px
+
+		&__title-clone
+			margin-bottom 58px
+
+		&__info
+			font-size 18px
+			margin 0 0 85px 0
