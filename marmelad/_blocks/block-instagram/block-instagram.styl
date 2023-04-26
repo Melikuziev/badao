@@ -1,0 +1,42 @@
+.block-instagram
+	padding-top 30px
+	padding-bottom 30px
+
+	&__title
+		margin-bottom 40px
+
+	&__img-grid
+		display grid
+		grid-template-columns 1fr 1fr
+		gap 20px
+		justify-items center
+
+	&__img
+		&:last-child
+			display none
+		img
+			vertical-align top
+
+@media (min-width: $mq.md)
+	.block-instagram
+		padding-top 40px
+		padding-bottom 40px
+
+	&__title
+		margin-bottom 60px
+
+@media (min-width: $mq.xl)
+	.block-instagram
+		padding-top 75px
+		padding-bottom 75px
+
+		&__title
+			margin-bottom 100px
+
+		&__img-grid
+			grid-template-columns 1fr 1fr 1fr
+			gap 30px
+
+		&__img
+			&:last-child
+				display block
